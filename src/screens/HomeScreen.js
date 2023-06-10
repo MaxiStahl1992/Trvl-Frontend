@@ -1,11 +1,12 @@
-import { View, Text } from "react-native"
+import { View, Text } from "react-native";
+import { fonts } from "../../assets/styles/styles";
 
 const HomeScreen = () => {
-    return (
-        <View>
-            <Text>Hallo</Text>
-        </View>
-    )
-}
+	return (
+		<View>
+			<Text style={fonts.textM}>Ha</Text>
+		</View>
+	);
+};
 
 export default HomeScreen;
