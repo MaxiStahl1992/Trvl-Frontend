@@ -4,7 +4,7 @@ import { fonts } from "../../assets/styles/styles";
 const HomeScreen = () => {
 	return (
 		<View>
-			<Text style={fonts.textM}>Ha</Text>
+			<Text style={fonts.textM}>Home</Text>
 		</View>
 	);
 };
