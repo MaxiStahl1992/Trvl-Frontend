@@ -1,10 +1,11 @@
-import { SafeAreaView, StatusBar } from "react-native";
+import { SafeAreaView, View, StatusBar } from "react-native";
 import { useCallback } from "react";
 import { Provider } from "react-redux";
 import { store } from "./src/store";
 import Navigation from "./src/components/navigation/navigation";
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { colors } from "./assets/styles/styles";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -26,10 +27,10 @@ export default function App() {
 
 	return (
 		<Provider store={store}>
-			<SafeAreaView style={{ flex: 1 }} onLayout={onLayoutRootView}>
-				<StatusBar backgroundColor="white" />
+			<View style={{ flex: 1, backgroundColor: colors.white }} onLayout={onLayoutRootView}>
+				<StatusBar hidden />
 				<Navigation />
-			</SafeAreaView>
+			</View>
 		</Provider>
 	);
 }
